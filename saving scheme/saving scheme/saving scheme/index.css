@@ -1,0 +1,236 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    height: 12vh;
+    background-color:rgb(245, 243, 239);
+    max-width: 1500px;
+    width:auto;
+    margin: 10px 130px;
+   border-radius: 10px;
+    }
+
+.logo{
+    margin:5px;
+    padding:5px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0%;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 1rem;
+   
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 8px 10px;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+ul li a:hover{
+    background-color: grey;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.hamburger{
+    position:absolute;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+    
+.hamburger .bar{
+    height: 3px;
+    width:100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+main{
+    margin-top: 15vh;
+}
+
+@media (max-width: 879px) {
+    body{
+        
+        overflow-x: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+       
+    }
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+
+    ul{
+        flex-direction: column;
+        position:absolute;
+        top:14vh;
+        right:-300%;
+        background-color:transparent;
+        height:40vh;
+        width:100%;
+        align-items: center;
+        transition: right 0.3s ease-in;
+        z-index: 1;
+    }
+
+    ul li {
+        margin-right: 0px;
+    }
+      
+    header{
+        max-width: 1500px;
+        width:auto;
+        margin:10px 50px;
+        border-radius: 10px; 
+    }
+    
+
+    .menu-slide {
+        right: 0;
+        transition: right 0.3s ease-in;
+    }
+
+    .cross .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .cross .bar:first-child{
+        transform: rotate(-45deg) translate(-6px, 7px);
+    }
+
+    .cross .bar:last-child{
+        transform: rotate(45deg) translate(-6px, -7px);
+    }
+
+    .container-core{
+
+        display:flex;
+        justify-content:center;
+        align-items: center; 
+        max-width: 1500px;
+        width:auto;
+        margin:50px;
+        box-shadow: 0 0 20px 9px #e5e9e6ec;
+        border-radius: 20px;
+        padding:20px;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: auto;
+        position: relative;
+        z-index:1;
+       
+        
+       }
+      
+        .Text h4{
+          display:flex;
+          justify-content:center;
+          text-align: center;
+          color: #78be8dec;
+        }
+      
+        .card-title{
+          text-align: center;
+          color: #78be8dec;
+        }
+      
+        .card-text{
+          text-align:center;
+        }
+}
+
+/*core values*/
+
+.container-core{
+
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    max-width: 1500px;
+    width:auto;
+    margin:50px;
+    box-shadow: 0 0 20px 9px #e5e9e6ec;
+    border-radius: 20px;
+    padding:20px;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: auto;
+    position: relative;
+    z-index:1;
+   
+    
+   }
+  
+    .Text h4{
+      display:flex;
+      justify-content:center;
+      text-align: center;
+      color: #78be8dec;
+    }
+  
+    .card-title{
+      text-align: center;
+      color: #78be8dec;
+    }
+  
+    .card-text{
+      text-align:center;
+    }
+  
+   /*core values css End */
+  /*card start*/
+
+  .container-card{
+
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    max-width: 1500px;
+    width:auto;
+    margin:50px;
+    padding:20px;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: auto;
+    position: relative;
+    z-index:1;
+   
+    
+   }
+  
+   .card{
+    
+    border:none;
+   }
+
+   /*footer*/
+
+   .footer-container ul {
+         display:block;
+   }
